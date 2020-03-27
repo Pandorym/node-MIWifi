@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    //    "noImplicitAny": true,
+    "allowJs": true,
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2015.iterable"
+    ],
+    "module": "commonjs",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

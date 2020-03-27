@@ -1,0 +1,42 @@
+{
+  "name": "node-miwifi",
+  "version": "0.0.0",
+  "description": "Use node.js to control MI-Wifi 📶",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "gulp watch",
+    "build": "gulp tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pandorym/node-MIWifi.git"
+  },
+  "keywords": [
+    "miwifi"
+  ],
+  "author": "Pandorym",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pandorym/node-MIWifi/issues"
+  },
+  "homepage": "https://github.com/Pandorym/node-MIWifi#readme",
+  "devDependencies": {
+    "@types/assert": "^1.4.6",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^12.12.31",
+    "assert": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "merge-stream": "^2.0.0",
+    "mocha": "^7.1.1",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cryptojs": "^2.5.3",
+    "qs": "^6.9.3"
+  }
+}
