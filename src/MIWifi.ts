@@ -41,6 +41,16 @@ export class MIWifi {
     MIWifi.Stok = LoginRes.data.token;
   }
 
+  static async PPPoE_Stop() {
+    return axios.get(MIWifi.BASE_URL + '/cgi-bin/luci/;stok=' + MIWifi.Stok + '/api/xqnetwork/pppoe_stop')
+                .then(res => res.data.code === 0);
+  }
+
+  static async PPPoE_Connect() {
+    return axios.get(MIWifi.BASE_URL + '/cgi-bin/luci/;stok=' + MIWifi.Stok + '/api/xqnetwork/pppoe_start')
+                .then(res => res.data.code === 0);
+  }
+
   static nonceCreat() {
     let type = 0;
     let time = Math.floor(new Date().getTime() / 1000);

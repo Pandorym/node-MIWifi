@@ -24,4 +24,18 @@ describe('MIWifi', function() {
 
     });
   }).timeout(60 * 1000);
+
+  it('PPPoE_Stop', (done) => {
+    MIWifi.PPPoE_Stop().then((result) => {
+      equal(result, true);
+      done();
+    });
+  });
+
+  it('PPPoE_Connect', (done) => {
+    MIWifi.PPPoE_Connect().then((result) => {
+      equal(result, true);
+      done();
+    });
+  });
 });
